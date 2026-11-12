@@ -34,5 +34,15 @@ autoscaling:
   maxReplicas: 100
   targetCPUUtilizationPercentage: 80
 
+livenessProbe:
+  enabled: true
+  initialDelaySeconds: 60
+  periodSeconds: 10
+
+readinessProbe:
+  enabled: true
+  initialDelaySeconds: 60
+  periodSeconds: 10
+
 adminUser: admin
 adminPassword: adminpassword
