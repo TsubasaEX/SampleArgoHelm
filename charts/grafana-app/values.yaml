@@ -13,5 +13,9 @@ service:
 persistence:
   enabled: false
 
+serviceAccount:
+  create: true
+  name: ""
+
 adminUser: admin
 adminPassword: adminpassword
