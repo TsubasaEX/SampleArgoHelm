@@ -33,6 +33,21 @@ autoscaling:
   minReplicas: 1
   maxReplicas: 100
   targetCPUUtilizationPercentage: 80
-  
+
+livenessProbe:
+  path: /api/health
+  port: http
+  initialDelaySeconds: 60
+  periodSeconds: 10
+
+readinessProbe:
+  path: /api/health
+  port: http
+  initialDelaySeconds: 60
+  periodSeconds: 10
+
+replicaCount: 1
+strategy: Recreate
+
 adminUser: admin
 adminPassword: adminpassword
