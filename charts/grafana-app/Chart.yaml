@@ -1,6 +1,0 @@
-apiVersion: v2
-name: grafana-app
-description: A Helm chart for deploying Grafana via Argo CD
-type: application
-version: 0.1.0
-appVersion: "10.4.0"
