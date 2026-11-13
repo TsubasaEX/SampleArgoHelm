@@ -132,4 +132,4 @@ kubectl get secret --namespace default grafana -o jsonpath="{.data.admin-passwor
 ```
 *Verification:* 
 1. 打開瀏覽器，輸入網址：`http://10.8.9.50:3000`
-2. 輸入帳號 `admin` 與剛解密取得的密碼，即可順利登入 Grafana 主畫面。 test
+2. 輸入帳號 `admin` 與剛解密取得的密碼，即可順利登入 Grafana 主畫面。
